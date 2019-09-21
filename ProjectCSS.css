@@ -1,0 +1,209 @@
+div.body
+{	
+	margin: 0px 60px;
+}
+.cart
+{
+	background-color: white;
+}
+.boxed label 
+{
+  border-radius: 50%;
+  width: 200px;
+  padding:10px;
+  border: solid 2px #ccc;
+  transition: all 0.3s;
+}
+
+.boxed input[type="radio"] {
+  display: none;
+}
+
+.boxed input[type="radio"]:checked + label 
+{
+  border: solid 2px black;
+}
+.help_about
+{
+	color:grey;
+	text-decoration: none;
+}
+div.price
+{
+	word-spacing: 200px;
+	color: black;
+}
+.options_of_mwk 
+{
+	color:black;
+	text-decoration: none;
+}
+ul#pics li
+{
+	display: inline;
+}
+div.select
+{
+	color: black;
+	margin-left: -8px;
+	margin-right: -8px;
+	background-color: lightblue;
+	text-align: center;
+	font-family: Georgia;
+	font-size:25px;
+	font-weight: normal;
+	color: black;
+	word-spacing: 200px; 
+}
+a.body
+{
+	color:black;
+	text-decoration: none;
+	font-size: 35px;
+}
+.zoom:hover 
+{
+  	-ms-transform: scale(1.5); /* IE 9 */
+  	-webkit-transform: scale(1.5); /* Safari 3-8 */
+  	transform: scale(1.5); 
+}
+.zoomless:hover
+{
+  	-ms-transform: scale(1.1); 
+  	-webkit-transform: scale(1.1); 
+  	transform: scale(1.1); 		
+}
+div.address
+{	
+	text-align: center;
+	width: 800px;
+	height: 700px;
+	background:lightgrey;
+	border-radius: 2%;
+	border-style: solid;
+	border-color: grey; 
+	color:color;
+	left:22%;
+	top:30%;
+	position: absolute;
+
+}
+div.address input[type="text"],input[type="password"],input[type="number"]
+{
+	border:none;
+	border-bottom:1px solid black;
+	background:transparent;
+	outline: none;
+	height: 40px;
+	color: black;
+	font-size: 16px;
+}
+div.address input[type="submit"]
+{
+
+	border:none;
+	outline: none;
+	height: 40px;
+	width: 200px;
+	background:#fb2525;
+	color:#ffff;
+	font-size:18px;
+	border-radius:20px;
+}
+div.address input[type="submit"]:hover
+{
+	cursor:pointer;
+	background:skyblue;
+	color:#000;
+}
+div.login
+{	
+	text-align: center;
+	width: 400px;
+	height: 350px;
+	background:lightgrey;
+	border-radius: 5%;
+	color:color;
+	left:37%;
+	top:30%;
+	position: absolute;
+}
+div.submit
+{	
+	text-align: center;
+	width: 500px;
+	height: 700px;
+	background:lightgrey;
+	border-radius: 5%;
+	color:color;
+	left:33%;
+	top:30%;
+	position: absolute;
+
+}
+div.login input[type="text"],input[type="password"],div.submit input[type="text"],input[type="password"]
+{
+	border:none;
+	border-bottom:1px solid black;
+	background:transparent;
+	outline: none;
+	height: 40px;
+	color: black;
+	font-size: 16px;
+}
+div.login input[type="submit"],div.submit input[type="submit"]
+{
+	border:none;
+	outline: none;
+	height: 40px;
+	width: 150px;
+	background:#fb2525;
+	color:#ffff;
+	font-size:18px;
+	border-radius:20px;
+}
+div.login input[type="submit"]:hover,div.submit input[type="submit"]:hover
+{
+	cursor:pointer;
+	background:skyblue;
+	color:#000;
+}
+div.login a
+{
+	text-decoration:none;
+	font-size:13px;
+	line-height: 20px;
+	color:darkgray;
+}
+div.login a:hover
+{
+	color:#ffc107;
+}
+div.Top
+{
+	color: grey;
+	font-family:Arial;
+	text-align: right;
+	word-spacing: 15px;
+	font-size: 10px;
+}
+div.footer
+{
+	background-color: #ECECEC;
+	font-family: Arial;
+	border:solid;
+	border-width: 70px;
+	border-color:#ECECEC;
+	margin-left:-8px;
+	margin-right:-8px;
+	margin-bottom: -8px;
+}
+marquee.offer
+{
+	background-color: orange;
+	height: 23px;
+	font-size: 23px;
+	margin-bottom: 20px;
+	margin-right:-8px;
+	margin-left: -8px;
+}

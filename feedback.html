@@ -1,0 +1,78 @@
+<html>
+<head>
+<style>
+body{
+background-image: url("feedback.jpg");
+background-repeat:no-repeat;
+background-size:cover;
+}
+.container label {
+  position: relative;
+}
+.container span::before,
+.container span::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.container span.radio:hover {
+  cursor: pointer;
+}
+.container span.radio::before {
+  left: -52px;
+  width: 45px;
+  height: 25px;
+  background-color: #A8AAC1;
+  border-radius: 50px;
+}
+.container span.radio::after {
+  left: -49px;
+  width: 17px;
+  height: 17px;
+  border-radius: 10px;
+  background-color: #6C788A;
+  transition: left .25s, background-color .25s;
+}
+input[type="radio"]:checked + label span.radio::after {
+  left: -27px;
+  background-color: #EBFF43;
+}
+</style>
+</head>
+<body>
+<center>
+<h1>Elegant Feedback Form</h1>
+<p>Please provide your Feedback below.
+<h3>How do you rate your overall experience?</h3>
+<form>
+  <!--<input type="radio" name="feedback" value="bad" onclick="func()" > Bad
+  <input type="radio" name="feedback" value="average" onclick="func()"> Average
+  <input type="radio" name="feedback" value="good" onclick="func()"> Good <br><br>-->
+  <section id="first" class="section">
+    <div class="container">
+      <input type="radio" name="group1" id="radio-1">
+      <label for="radio-1"><span class="radio"><b><i>Bad</i></b></span></label>
+    </div><br><br>
+    <div class="container">
+      <input type="radio" name="group1" id="radio-2">
+      <label for="radio-2"><span class="radio"><b><i>Good</i></b></span></label>
+    </div><br><br>
+    <div class="container">
+      <input type="radio" name="group1" id="radio-3">
+      <label for="radio-3"><span class="radio"><b><i>Average</i></b></span></label>
+    </div>
+</section><br><br>
+<strong>  Comments:</strong><br>
+<Textarea rows="4" cols="50" name="comment"></Textarea><br><br><br>
+<strong>Your Name:</strong><br>
+<input name="name"><br><br>
+<strong>Email id:</strong><br>
+<input name="emailid"><br><br>
+<button type="submit">Submit</button>
+</form>
+</center>
+</body>
+
+</html>

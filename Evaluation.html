@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<style>
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.topright{
+position: absolute;
+top:10px;
+right:18px;
+}
+body{
+background: url(f1.jpg);
+background-repeat:no-repeat;
+background-size:cover;
+font-size:50px;
+}
+#welcome{
+font-size:34px;
+color:white;
+letter-spacing:1px;
+align:center;
+}
+#welcome #w2{
+font-size:28px;
+color:white;
+}
+.blinking{
+    animation:blinkingText 1.5s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: #000;    }
+    49%{    color: transparent; }
+    50%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #000;    }
+}
+img{
+  -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+  transition: width 2s, height 2s, transform 2s;
+}
+img:hover {
+  width: 200px;
+  height: 200px;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+</style>
+
+</head>
+
+<body>
+
+
+<div id="mySidenav" class="sidenav">
+
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+  <a href="menu.html">Menu</a>
+  <a href="main.html">Gallery</a>
+  <a href="contact.html">Contact</a>
+  <a href="feedback.html">Feedback</a>
+ 
+</div>
+
+<span style="font-size:30px;cursor:pointer;color:white"  onclick="openNav()">&#9776; </span>
+
+
+<center id="welcome">
+<b><i>
+<p id="w1"> Welcome to Mayur Resturant</p>
+<img src="D:\C DRIVE DATA\DESKTOP\INTERNAL\1.png" alt="good food" height="120px" width="110px" style="border-radius: 30px;">
+<p id="w2"><span class="blinking">Come hungry, leave happy.</span> </p>
+</i></b>
+</center>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+</body>
+</html>
