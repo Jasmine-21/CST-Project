@@ -1,39 +1,115 @@
 <html>
+
 <head>
-<style>
-body{
-background-size:cover;
-font-size:30px;
-font-family:"Comic Sans MS", cursive, sans-serif;
-}
+    <style>
+        .footer {
+            background-color: whitesmoke;
+            width: 100%;
+            overflow: auto;
 
-</style>
+        }
+         .footer h3 {
+            color: black;
+            font-family: serif;
+        }
+        .footer1,
+        .footer2 {
+            float: left;
+            width: 45%;
+            margin: 2.5%;
+
+        }
+        .footer p {
+            font-size: 12px;
+            color: gray;
+        }
+        .footer input {
+            padding: 12px;
+            border: none;
+            font-size: 10px;
+            width: 70%;
+            font-weight: bolder;
+            color: black;
+            outline: none;
+        }
+
+        .footer button {
+            padding: 12px;
+            background: orange;
+            color: white;
+            border: none;
+            width: 40%;
+            font-weight: bold;
+            font-size: 12px;
+            outline: none;
+        }
+
+
+
+        @media screen and (max-width:480px) {
+
+            .footer1,
+            .footer2 {
+                width: 95%;
+                margin-left: 5%;
+            }
+
+            .footer p {
+                font-size: 14px;
+            }
+        }
+
+
+        .footer img {
+            width: 30%;
+        }
+    </style>
 </head>
-<body background="end2.jpeg">
-
-<center>
-<pre>
-
-<B>ADDRESS </b>
-
-Mayur Resturant,
-New Delhi,
-110001
 
 
-<b>CONTACT</b>
- 
-singlajasmine19@gmail.com
-jasminesahoo@gmail.com
-Tel: 01681-25553
+<body style="background-color:darkolivegreen;">
+    <div class="footer" style="background-image:url(end2.jpeg);background-repeat: no-repeat;background-size: cover;">
 
- 
-<b>HOURS</b>
+        <div class="footer1" >
 
-Open Daily
-10AM-12:00AM
+            <h3 >CONTACT US</h3>
 
-</pre>
-</center>
+            <p>Address: House No 08, james street<br> No 08
+                Benin, Edo state, Nigeria<br><br>
+                Email: singlajasmine19@gmail.com<br>
+                Phone:(+234 7081 3404 14)<br>
+                (+234 9037 6117 11)</p>
+
+            <br>
+
+            <h3>INSTAGRAM</h3>
+
+            <img src="http://preview.hasthemes.com/resta-preview/resta/images/gallery/1.jpg">
+          <img src="http://preview.hasthemes.com/resta-preview/resta/images/gallery/2.jpg">
+            <img src="http://preview.hasthemes.com/resta-preview/resta/images/gallery/3.jpg">
+            <img src="http://preview.hasthemes.com/resta-preview/resta/images/gallery/4.jpg">
+            <img src="http://preview.hasthemes.com/resta-preview/resta/images/gallery/5.jpg">
+            <img src="http://preview.hasthemes.com/resta-preview/resta/images/gallery/6.jpg">
+
+            <br><br><br>
+        </div>
+        <div class="footer2" >
+            <h3>OPENING HOURS</h3>
+            Monday- Friday. . . . . . . . . . . . . <b>8 AM - 5PM</b><br>
+
+            Sunday. . . . . . . . . . . . . . . . . . . . . <b>12 AM - 5PM</b><br>
+
+            Saturday . . . . . . . . . . . . . . . . . . . . . . . . . <b>Close</b></p>
+
+            <br><br>
+            <h3>Email</h3>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <br><br>
+            <button class="table" type="submit">SUBMIT</button>
+            <br> <br>
+        </div>
+
+    </div>
 </body>
+
 </html>
