@@ -1,6 +1,6 @@
 <html>
 <head>
-<style>
+<!-- <style>
 body
 {
 font-family: "Times New Roman";
@@ -9,81 +9,97 @@ font-family: "Times New Roman";
 {
     width:10;
 } */
+</style> -->
+<style>
+    .gallery {
+
+width: 100%;
+text-align:center ;
+height:auto;
+overflow: auto;
+
+background:white;
+
+}
+
+
+.gallery p { 
+color:gray; 
+font-size:15px;
+font-family:serif;
+
+} 
+
+
+
+.gallery img {
+width:45%;
+margin-bottom:3%;
+margin-left:1%;
+margin-right:1%;
+border:2px solid lightgray;
+opacity:0.8;
+transition:all 0.5s;
+     }
+     
+     
+     @media screen and (max-width:760px) {
+         .gallery img {
+             width:80%;
+             margin:auto;
+         }
+     }
+     
+     
+     
+     
+
+.gallery fieldset {
+width:50%;
+}
+
+
+.gallery h1 {
+font-family:cursive;
+font-size:40px;
+font-style:italic ;
+font-weight:bolder ;
+color:orange;
+
+}
+
+.gallery img:hover {
+opacity:1.0;
+transform:scale(1.05);
+}
+
 </style>
 </head>
-<body style="background-color:black	;color:red;">
-<center>
-<div class="imag" >
-<img src="table.jpg" alt="" / onmouseover="myfunction(this)" onmouseleave="myfunctionl1()" >
-<p id="demo" ></p>
-</div><br>
-<div class="imag">
-<img src="img2.jpg" alt="" / onmouseover="myfunction1(this)" onmouseleave="myfunctionl2()">
-<p id="demo1"></p>
-</div><br>
-<div class="imag">
-<img src="main(2).jpg" alt="" / onmouseover="myfunction2(this)" onmouseleave="myfunctionl3()"><p id="demo2"></p>
-</div><br>
-<div class="imag">
-<img src="images.jpg" alt="" / onmouseover="myfunction3(this)" onmouseleave="myfunctionl4()"><p id="demo3"></p>
-</div><br>
-<div class="imag">
-<img src="img4.jpg" alt="" / onmouseover="myfunction4(this)" onmouseleave="myfunctionl5()"><p id="demo4"></p>
-</div><br>
-</center>
-<script>
-function myfunctionl1(){
-document.getElementsByTagName("p");
-document.getElementById("demo").innerHTML = "";
-}
-function myfunction(x)
-{
-var x = document.getElementsByTagName("p");
-document.getElementById("demo").innerHTML = 
-'Aguadulce Spanish  ';
-}
-function myfunctionl2(){
-document.getElementsByTagName("p");
-document.getElementById("demo1").innerHTML = "";
-}
-function myfunction1(y)
-{
-var y = document.getElementsByTagName("p");
-document.getElementById("demo1").innerHTML = 
-'Indian Summer ';
-}
-function myfunctionl3(){
-document.getElementsByTagName("p");
-document.getElementById("demo2").innerHTML = "";
-}
-function myfunction2(w)
-{
-var w = document.getElementsByTagName("p");
-document.getElementById("demo2").innerHTML = 
-'Meatliquor Brighton ';
-}
-function myfunctionl4(){
-document.getElementsByTagName("p");
-document.getElementById("demo3").innerHTML = "";
-}
-function myfunction3(z)
-{
-var z = document.getElementsByTagName("p");
-document.getElementById("demo3").innerHTML = 
-'GB1 Seafood and Oyster Bar  ';
-}
-function myfunctionl5(){
-document.getElementsByTagName("p");
-document.getElementById("demo4").innerHTML = "";
-}
-function myfunction4(p)
-{
-var p = document.getElementsByTagName("p");
-document.getElementById("demo4").innerHTML = 
-'Nuposto Pizza-Pasta-Bar ';
-}
-
-
-</script>
+<body style="background-color:black;">
+    <div class="gallery" style="background-color:black;">
+        <center>
+        <h1>Our Gallery</h1>
+    </center>
+       
+        <br>
+        
+        <img src="http://preview.hasthemes.com/resta-preview/resta/images/gallery/1.jpg" data-aos="fade-right">
+        
+            <img src="http://preview.hasthemes.com/resta-preview/resta/images/gallery/2.jpg" data-aos="fade-left">
+        
+        
+            <img src="http://preview.hasthemes.com/resta-preview/resta/images/gallery/3.jpg" data-aos="fade-right">
+        
+   
+   
+           <img src="http://preview.hasthemes.com/resta-preview/resta/images/gallery/5.jpg" data-aos="fade-left">
+           
+           <img src="http://preview.hasthemes.com/resta-preview/resta/images/gallery/6.jpg" data-aos="fade-right">
+           
+           <img src="http://preview.hasthemes.com/resta-preview/resta/images/gallery/4.jpg"     data-aos="fade-left">
+            
+        </div>
+   
 </body>
+
 </html>
